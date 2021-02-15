@@ -1,6 +1,6 @@
 script_name('LCH')
 script_author('Oscar Jimenez')
-script_version('0.01')
+script_version('0.02')
 
 -- »спользуемые библиотеки
 require 'lib.moonloader'
@@ -11,8 +11,8 @@ local inicfg = require 'inicfg'
 local encoding = require 'encoding'
 
 -- јвтообновление
-local script_vers = 1
-local script_vers_text = '0.01'
+local script_vers = 2
+local script_vers_text = '0.02'
 
 local script_path = thisScript().script_path
 local script_url = 'https://raw.githubusercontent.com/Bennioff/scripts/main/lchelper.lua'
@@ -37,7 +37,7 @@ function main()
     _, pId = sampGetPlayerIdByCharHandle(PLAYER_PED)
     pNick = sampGetPlayerNickname(pId):gsub('_', ' ')
     wait(2000)
-    sampAddChatMessage(thisScript().name.. ' {FFFFFF}Х LC Helper v' ..thisScript().version.. ' {32CD32}успешно {FFFFFF}загружен!', mainColor)
+    sampAddChatMessage(thisScript().name.. ' {FFFFFF}Х LC Helper v' ..thisScript().version.. ' {32CD32}успешно {FFFFFF}загружен!', -1)
 
     downloadUrlToFile(update_url, update_path, function(pId, stats)
         if status == dlstatus.STATUS_ENDDOWNLOADDATA then
