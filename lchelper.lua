@@ -15,7 +15,7 @@ local script_vers = 1
 local script_vers_text = '0.01'
 
 local script_path = thisScript().script_path
-local script_url = ''
+local script_url = 'https://raw.githubusercontent.com/Bennioff/scripts/main/lchelper.lua'
 
 local update_path = getWorkingDirectory() .. '/LCH config/update.ini'
 local update_url = 'https://raw.githubusercontent.com/Bennioff/scripts/main/update.ini'
